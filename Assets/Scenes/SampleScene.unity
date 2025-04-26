@@ -12814,6 +12814,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   listaPersonajes: []
   crimenActual: {fileID: 0}
+  crimenSolver: {fileID: 1941509352}
   canvasPrefab: {fileID: 1642431067}
   chatbotPrefab: {fileID: 729539055}
   characterPrefabs:
@@ -17778,6 +17779,7 @@ GameObject:
   - component: {fileID: 1941509347}
   - component: {fileID: 1941509351}
   - component: {fileID: 1941509350}
+  - component: {fileID: 1941509352}
   m_Layer: 8
   m_Name: Resolution
   m_TagString: Untagged
@@ -17891,6 +17893,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 13.83, y: 2.89, z: 11.31}
   m_Center: {x: 0, y: 1.110223e-16, z: 0}
+--- !u!114 &1941509352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941509345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab730d1cc674c81428d4616491b955b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputVictima: {fileID: 0}
+  inputCulpable: {fileID: 0}
+  inputArma: {fileID: 0}
+  resultadoCorrecto: {fileID: 0}
+  resultadoIncorrecto: {fileID: 0}
+  victimaCorrecta: 
+  culpableCorrecto: 
+  armaCorrecta: 
 --- !u!1 &1942755808
 GameObject:
   m_ObjectHideFlags: 0

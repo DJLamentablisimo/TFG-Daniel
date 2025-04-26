@@ -9,10 +9,9 @@ public class CrimenSolver : MonoBehaviour
     public GameObject resultadoCorrecto;
     public GameObject resultadoIncorrecto;
 
-    // Respuestas correctas (estas puedes cambiarlas dinámicamente)
-    public string victimaCorrecta = "Juan Pérez";
-    public string culpableCorrecto = "Marta López";
-    public string armaCorrecta = "Cuchillo";
+    public string victimaCorrecta;
+    public string culpableCorrecto;
+    public string armaCorrecta;
 
     public void ComprobarCrimen()
     {

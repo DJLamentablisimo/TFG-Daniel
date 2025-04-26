@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     public List<Character> listaPersonajes = new List<Character>();
     public Crime crimenActual;
 
+    public CrimenSolver crimenSolver;
+
     public GameObject canvasPrefab;
     public GameObject chatbotPrefab;
     private List<ChatBot> chatbotsInstanciados = new List<ChatBot>();
@@ -250,6 +252,35 @@ public class GameManager : MonoBehaviour
                 {
                     Debug.LogWarning($"❌ El ChatBot de {personaje.nombre} no tiene LLMCharacter asignado en el componente ChatBot.");
                 }
+            }
+        }
+
+        if (crimenSolver != null)
+        {
+            crimenSolver.victimaCorrecta = crimenActual.victim.nombre;
+            crimenSolver.culpableCorrecto = crimenActual.culprit.nombre;
+
+            // Arma como texto
+            switch (crimenActual.weapon)
+            {
+                case WeaponType.ArmaBlanca:
+                    crimenSolver.armaCorrecta = "Cuchillo";
+                    break;
+                case WeaponType.ArmaDeFuego:
+                    crimenSolver.armaCorrecta = "Pistola";
+                    break;
+                case WeaponType.ObjetoContundente:
+                    crimenSolver.armaCorrecta = "Martillo";
+                    break;
+                case WeaponType.Cuerda:
+                    crimenSolver.armaCorrecta = "Cuerda";
+                    break;
+                case WeaponType.Veneno:
+                    crimenSolver.armaCorrecta = "Veneno";
+                    break;
+                default:
+                    crimenSolver.armaCorrecta = "???";
+                    break;
             }
         }
     }

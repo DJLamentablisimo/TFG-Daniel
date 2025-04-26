@@ -6,7 +6,9 @@ public enum ScanClueType
 {
     Ninguno,
     Arma,
-    Sangre
+    Sangre,
+    HuellasDactilares,
+    HuellasDeZapato
 }
 
 public class ScanableObject : MonoBehaviour
@@ -25,6 +27,12 @@ public class ScanableObject : MonoBehaviour
 
     [Header("Datos de sangre")]
     public string tipoSangre = "Desconocido";
+
+    [Header("Datos de huellas dactilares")]
+    public string origenHuellasDactilares = "No identificado";
+
+    [Header("Datos de huellas de zapato")]
+    public string tipoZapato = "Desconocido";
 
     [Header("Interacción especial")]
     public bool abreCanvasResolucion = false; 
@@ -57,14 +65,24 @@ public class ScanableObject : MonoBehaviour
         {
             string data = $"<b>Pista encontrada:</b> {tipoPista}\n{descripcionPista}";
 
-            if (tipoPista == ScanClueType.Arma)
+            switch (tipoPista)
             {
-                data += $"\n\n<b>Tipo de arma:</b> {tipoArma}";
-                data += $"\n<b>Huellas encontradas:</b> {(tieneHuellas ? tipoHuellas : "No se encontraron")}";
-            }
-            else if (tipoPista == ScanClueType.Sangre)
-            {
-                data += $"\n\n<b>Tipo de sangre:</b> {tipoSangre}";
+                case ScanClueType.Arma:
+                    data += $"\n\n<b>Tipo de arma:</b> {tipoArma}";
+                    data += $"\n<b>Huellas encontradas:</b> {(tieneHuellas ? tipoHuellas : "No se encontraron")}";
+                    break;
+
+                case ScanClueType.Sangre:
+                    data += $"\n\n<b>Tipo de sangre:</b> {tipoSangre}";
+                    break;
+
+                case ScanClueType.HuellasDactilares:
+                    data += $"\n\n<b>Origen de huellas:</b> {origenHuellasDactilares}";
+                    break;
+
+                case ScanClueType.HuellasDeZapato:
+                    data += $"\n\n<b>Tipo de zapato:</b> {tipoZapato}";
+                    break;
             }
 
             return data;
