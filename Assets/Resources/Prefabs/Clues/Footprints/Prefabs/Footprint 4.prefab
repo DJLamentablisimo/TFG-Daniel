@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 322563960059939452}
   - component: {fileID: 3705191543905324758}
   - component: {fileID: 3773703364844575162}
-  m_Layer: 0
+  - component: {fileID: -2873809723045853087}
+  m_Layer: 8
   m_Name: Footprint 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -83,3 +84,25 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &-2873809723045853087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6916942317909861181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6469e5aee695f1744a420d40413b9a6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoPista: 4
+  descripcionPista: 
+  tipoArma: 0
+  tieneHuellas: 0
+  tipoHuellas: Desconocidas
+  tipoSangre: Desconocido
+  origenHuellasDactilares: No identificado
+  tipoZapato: Desconocido
+  abreCanvasResolucion: 0
+  canvasResolucion: {fileID: 0}

@@ -3,8 +3,67 @@
   "WorkspaceRootPath": "D:\\Proyectos\\TFG Daniel\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|d:\\proyectos\\tfg daniel\\assets\\scripts\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\Models\\Character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\Models\\Character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|D:\\Proyectos\\TFG Daniel\\assets\\scripts\\models\\clue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\models\\clue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|D:\\Proyectos\\TFG Daniel\\assets\\scripts\\models\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\models\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\Models\\Crime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\Models\\Crime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|D:\\Proyectos\\TFG Daniel\\assets\\scripts\\chatbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\chatbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\PressKeyOpenDoor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\PressKeyOpenDoor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|D:\\Proyectos\\TFG Daniel\\assets\\scripts\\firstpersoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\firstpersoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|D:\\Proyectos\\TFG Daniel\\assets\\scripts\\scanning\\scanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scanning\\scanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|D:\\Proyectos\\TFG Daniel\\assets\\scripts\\chattrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\chattrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88277FD2-C03B-1DC5-781E-9F232030A30E}|undream.llmunity.Runtime.csproj|D:\\Proyectos\\TFG Daniel\\assets\\llmunity\\runtime\\llmcharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88277FD2-C03B-1DC5-781E-9F232030A30E}|undream.llmunity.Runtime.csproj|solutionrelative:assets\\llmunity\\runtime\\llmcharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88277FD2-C03B-1DC5-781E-9F232030A30E}|undream.llmunity.Runtime.csproj|D:\\Proyectos\\TFG Daniel\\assets\\llmunity\\runtime\\llm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88277FD2-C03B-1DC5-781E-9F232030A30E}|undream.llmunity.Runtime.csproj|solutionrelative:assets\\llmunity\\runtime\\llm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Proyectos\\TFG Daniel\\Assets\\Scripts\\CrimenTrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|D:\\Proyectos\\TFG Daniel\\assets\\scripts\\managers\\dialoguemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\dialoguemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|D:\\Proyectos\\TFG Daniel\\assets\\scripts\\scanning\\scanableobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scanning\\scanableobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|D:\\Proyectos\\TFG Daniel\\assets\\scripts\\bubble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bubble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|D:\\Proyectos\\TFG Daniel\\assets\\scripts\\crimensolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,65 +72,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|D:\\Proyectos\\TFG Daniel\\assets\\scripts\\canvasresolucionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\canvasresolucionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|D:\\Proyectos\\TFG Daniel\\assets\\scripts\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|d:\\proyectos\\tfg daniel\\assets\\scripts\\chatbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\chatbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|D:\\Proyectos\\TFG Daniel\\assets\\scripts\\bubble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bubble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|D:\\Proyectos\\TFG Daniel\\assets\\scripts\\scanning\\scanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scanning\\scanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88277FD2-C03B-1DC5-781E-9F232030A30E}|undream.llmunity.Runtime.csproj|D:\\Proyectos\\TFG Daniel\\assets\\llmunity\\runtime\\llmcharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88277FD2-C03B-1DC5-781E-9F232030A30E}|undream.llmunity.Runtime.csproj|solutionrelative:assets\\llmunity\\runtime\\llmcharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|D:\\Proyectos\\TFG Daniel\\assets\\scripts\\managers\\dialoguemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\dialoguemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|D:\\Proyectos\\TFG Daniel\\assets\\scripts\\chattrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\chattrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88277FD2-C03B-1DC5-781E-9F232030A30E}|undream.llmunity.Runtime.csproj|D:\\Proyectos\\TFG Daniel\\assets\\llmunity\\runtime\\llm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88277FD2-C03B-1DC5-781E-9F232030A30E}|undream.llmunity.Runtime.csproj|solutionrelative:assets\\llmunity\\runtime\\llm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|D:\\Proyectos\\TFG Daniel\\assets\\scripts\\models\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\models\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|D:\\Proyectos\\TFG Daniel\\assets\\scripts\\models\\clue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\models\\clue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\Models\\Character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\Models\\Character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\Models\\Crime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\Models\\Crime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|D:\\Proyectos\\TFG Daniel\\assets\\scripts\\firstpersoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\firstpersoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\PressKeyOpenDoor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\PressKeyOpenDoor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Proyectos\\TFG Daniel\\Assets\\Scripts\\CrimenTrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -81,62 +81,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CanvasResolucionManager.cs",
-              "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\CanvasResolucionManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CanvasResolucionManager.cs",
-              "ToolTip": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\CanvasResolucionManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CanvasResolucionManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T09:54:30.382Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CrimenSolver.cs",
-              "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\CrimenSolver.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CrimenSolver.cs",
-              "ToolTip": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\CrimenSolver.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CrimenSolver.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T09:42:57.881Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 15,
               "Title": "Bubble.cs",
               "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\Bubble.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Bubble.cs",
               "ToolTip": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\Bubble.cs",
               "RelativeToolTip": "Assets\\Scripts\\Bubble.cs",
-              "ViewState": "AgIAALUAAAAAAAAAAAA9wPgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAALYAAAAAAAAAAAAowPgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-14T09:47:08.234Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 14,
               "Title": "ScanableObject.cs",
               "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\Scanning\\ScanableObject.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Scanning\\ScanableObject.cs",
               "ToolTip": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\Scanning\\ScanableObject.cs",
               "RelativeToolTip": "Assets\\Scripts\\Scanning\\ScanableObject.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAIwFgAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAwwFgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T10:11:16.904Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T10:11:16.904Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "DialogueManager.cs",
               "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\Managers\\DialogueManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\DialogueManager.cs",
@@ -148,35 +121,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 12,
               "Title": "CrimenTrigger.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Proyectos\\TFG Daniel\\Assets\\Scripts\\CrimenTrigger.cs",
               "ToolTip": "C:\\Users\\Usuario\\Proyectos\\TFG Daniel\\Assets\\Scripts\\CrimenTrigger.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-15T09:41:20.694Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 0,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\Managers\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\GameManager.cs",
+              "ToolTip": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\Managers\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Managers\\GameManager.cs",
+              "ViewState": "AgIAAAoBAAAAAAAAAAAwwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T11:35:24.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CrimenSolver.cs",
+              "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\CrimenSolver.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CrimenSolver.cs",
+              "ToolTip": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\CrimenSolver.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CrimenSolver.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T09:42:57.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "LLM.cs",
               "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\LLMUnity\\Runtime\\LLM.cs",
               "RelativeDocumentMoniker": "Assets\\LLMUnity\\Runtime\\LLM.cs",
               "ToolTip": "D:\\Proyectos\\TFG Daniel\\Assets\\LLMUnity\\Runtime\\LLM.cs",
               "RelativeToolTip": "Assets\\LLMUnity\\Runtime\\LLM.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-20T11:35:30.017Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "LLMCharacter.cs",
               "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\LLMUnity\\Runtime\\LLMCharacter.cs",
               "RelativeDocumentMoniker": "Assets\\LLMUnity\\Runtime\\LLMCharacter.cs",
               "ToolTip": "D:\\Proyectos\\TFG Daniel\\Assets\\LLMUnity\\Runtime\\LLMCharacter.cs",
               "RelativeToolTip": "Assets\\LLMUnity\\Runtime\\LLMCharacter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-20T11:35:17.526Z"
             },
@@ -194,7 +191,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Scanner.cs",
               "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\Scanning\\Scanner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Scanning\\Scanner.cs",
@@ -206,20 +203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\Managers\\GameManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\GameManager.cs",
-              "ToolTip": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\Managers\\GameManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Managers\\GameManager.cs",
-              "ViewState": "AgIAAO0AAAAAAAAAAAAAwBwBAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T11:35:24.236Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 7,
               "Title": "FirstPersonController.cs",
               "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\FirstPersonController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\FirstPersonController.cs",
@@ -231,7 +215,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 6,
               "Title": "PressKeyOpenDoor.cs",
               "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\PressKeyOpenDoor.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PressKeyOpenDoor.cs",
@@ -243,20 +227,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ChatBot.cs",
               "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\ChatBot.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ChatBot.cs",
               "ToolTip": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\ChatBot.cs",
               "RelativeToolTip": "Assets\\Scripts\\ChatBot.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAANAAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAALAAAAAAAAAAAADwv9AAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T11:56:39.714Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-16T11:56:39.714Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 4,
               "Title": "Crime.cs",
               "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\Models\\Crime.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Models\\Crime.cs",
@@ -268,7 +251,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 3,
               "Title": "Enums.cs",
               "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\Models\\Enums.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Models\\Enums.cs",
@@ -280,7 +263,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 2,
               "Title": "Clue.cs",
               "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\Models\\Clue.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Models\\Clue.cs",
@@ -292,15 +275,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 1,
               "Title": "Character.cs",
               "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\Models\\Character.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Models\\Character.cs",
               "ToolTip": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\Models\\Character.cs",
               "RelativeToolTip": "Assets\\Scripts\\Models\\Character.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-07T11:20:22.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CanvasResolucionManager.cs",
+              "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\CanvasResolucionManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CanvasResolucionManager.cs",
+              "ToolTip": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\CanvasResolucionManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CanvasResolucionManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T09:54:30.382Z"
             }
           ]
         }

@@ -59,17 +59,6 @@ namespace LLMUnitySamples
 
             stopButton.gameObject.SetActive(true);
             ShowLoadedMessages();
-
-            // Asegurar que Warmup se hace de verdad
-            if (llmCharacter != null)
-            {
-                _ = llmCharacter.Warmup(WarmUpCallback);
-            }
-            else
-            {
-                Debug.LogWarning("❌ ChatBot sin LLMCharacter asignado");
-                WarmUpCallback(); // <-- aún así desbloquea input para testear
-            }
         }
 
         public void StartConversation()
@@ -205,6 +194,19 @@ namespace LLMUnitySamples
         {
             yield return null; // Esperar un frame
             inputBubble?.FixCaretSorting(); // Llamar a la función cuando el caret ya existe
+        }
+        public void Inicializar()
+        {
+            if (llmCharacter != null)
+            {
+                Debug.Log($"🚀 Lanzando Warmup desde Inicializar() en {gameObject.name}");
+                _ = llmCharacter.Warmup(WarmUpCallback);
+            }
+            else
+            {
+                Debug.LogWarning($"❌ LLMCharacter no asignado en {gameObject.name}");
+                WarmUpCallback(); // opcional: evita quedarse en \"Loading...\" si algo falla
+            }
         }
     }
 }

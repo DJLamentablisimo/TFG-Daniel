@@ -31,6 +31,9 @@ public class ScanableObject : MonoBehaviour
     [Header("Datos de huellas dactilares")]
     public string origenHuellasDactilares = "No identificado";
 
+    [Header("Propietario de la pista (si aplica)")]
+    public Character propietarioPista;
+
     [Header("Datos de huellas de zapato")]
     public string tipoZapato = "Desconocido";
 
@@ -48,7 +51,7 @@ public class ScanableObject : MonoBehaviour
     {
         if (character != null)
         {
-            string data = $"<b>{character.nombre}, {character.edad}</b>\n{character.ocupacion}</b>\nRasgos de personalidad: {character.personalidad}";
+            string data = $"<b>{character.nombre}, {character.edad}</b>\nGrupo sanguineo: {character.bloodType}</b>\nNumero de pie: {character.footSize}</b>\n{character.ocupacion}</b>\nRasgos de personalidad: {character.personalidad}";
 
             if (gameManager != null && gameManager.crimenActual.victim == character)
             {
@@ -77,7 +80,8 @@ public class ScanableObject : MonoBehaviour
                     break;
 
                 case ScanClueType.HuellasDactilares:
-                    data += $"\n\n<b>Origen de huellas:</b> {origenHuellasDactilares}";
+                    data += "\n\n<b>Origen de huellas:</b> ";
+                    data += propietarioPista != null ? propietarioPista.nombre : origenHuellasDactilares;
                     break;
 
                 case ScanClueType.HuellasDeZapato:

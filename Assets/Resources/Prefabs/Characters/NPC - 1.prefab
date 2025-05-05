@@ -127,6 +127,9 @@ MonoBehaviour:
   edad: 36
   ocupacion: Profesor
   personalidad: Desorganizada
+  bloodType: 0
+  fingerprint: 1
+  footSize: 40
   rol: 0
   tieneRasgoExtra: 0
   haPresenciadoAlgoImportante: 0
@@ -148,6 +151,9 @@ MonoBehaviour:
   tieneHuellas: 0
   tipoHuellas: Desconocidas
   tipoSangre: Desconocido
+  origenHuellasDactilares: No identificado
+  propietarioPista: {fileID: 0}
+  tipoZapato: Desconocido
   abreCanvasResolucion: 0
   canvasResolucion: {fileID: 0}
 --- !u!54 &8468972338028479751

@@ -1,4 +1,5 @@
-﻿using LLMUnitySamples;
+﻿using LLMUnity;
+using LLMUnitySamples;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,16 +8,17 @@ using static Enums;
 
 public class GameManager : MonoBehaviour
 {
+    public GameObject[] characterPrefabs;
     public List<Character> listaPersonajes = new List<Character>();
+    public GameObject canvasPrefab;
+    public GameObject chatbotPrefab;
+
     public Crime crimenActual;
+
+    private List<ChatBot> chatbotsInstanciados = new List<ChatBot>();
 
     public CrimenSolver crimenSolver;
 
-    public GameObject canvasPrefab;
-    public GameObject chatbotPrefab;
-    private List<ChatBot> chatbotsInstanciados = new List<ChatBot>();
-    // Agrega un array para los prefabs de personajes
-    public GameObject[] characterPrefabs;
     public Collider[] spawnAreasPersonajes; // Áreas de spawn (por habitación)
     private List<Collider> usedAreas = new List<Collider>();
 
@@ -27,6 +29,9 @@ public class GameManager : MonoBehaviour
     public GameObject armaCuerdaPrefab;
     public GameObject armaVenenoPrefab;
     public List<GameObject> prefabsSangre;
+    public List<GameObject> prefabsFingerprints;
+    public List<GameObject> prefabsFootprints;
+
 
     private Dictionary<WeaponType, Quaternion> rotacionArmas = new Dictionary<WeaponType, Quaternion>
     {
@@ -44,12 +49,7 @@ public class GameManager : MonoBehaviour
 
         // Generación del crimen
         GenerarCrimen();
-
-        //Debug.Log($"Víctima: {crimenActual.victim.nombre}, {crimenActual.victim.edad}");
-        //Debug.Log($"Culpable: {crimenActual.culprit.nombre}");
-        //Debug.Log($"Arma: {crimenActual.weapon}");
-        //Debug.Log($"Habitación: {crimenActual.room}");
-        //Debug.Log($"Motivo: {crimenActual.motive}");
+        StartCoroutine(PrecalentarTodosLosChatbots());
 
         string jsonCrime = JsonUtility.ToJson(crimenActual, true);
         Debug.Log("Crimen generado en formato JSON:\n" + jsonCrime);
@@ -80,48 +80,38 @@ public class GameManager : MonoBehaviour
 
                 // Buscar el container dentro del canvas recién instanciado
                 Transform container = canvasInstancia.transform.Find("ChatPanel");
-                if (container != null)
-                {
-                    ChatBot chatBotScript = chatbotInstancia.GetComponent<ChatBot>();
-                    if (chatBotScript != null)
-                    {
-                        chatBotScript.chatContainer = container;
-                        chatbotsInstanciados.Add(chatBotScript);
-                    }
-                    else
-                    {
-                        Debug.LogWarning("❌ No se encontró ChatBot en el chatbotInstancia.");
-                    }
-                }
-                else
-                {
-                    Debug.LogWarning("❌ No se encontró 'ChatContainer' en el canvas duplicado.");
-                }
-
-                // Buscar el StopButton dentro del Canvas instanciado
                 Button stopButton = canvasInstancia.transform.Find("StopButton")?.GetComponent<Button>();
+                LLMCharacter llm = chatbotInstancia.GetComponentInChildren<LLMCharacter>();
+                ChatBot chatBotScript = chatbotInstancia.GetComponent<ChatBot>();
 
-                if (stopButton != null)
+                if (chatBotScript != null)
                 {
-                    ChatBot chatBotScript = chatbotInstancia.GetComponent<ChatBot>();
-                    if (chatBotScript != null)
-                    {
-                        chatBotScript.stopButton = stopButton;
-                    }
+                    if (container != null)
+                        chatBotScript.chatContainer = container;
                     else
-                    {
-                        Debug.LogWarning("❌ No se encontró el script ChatBot en el chatbotInstancia.");
-                    }
+                        Debug.LogWarning("❌ No se encontró 'ChatContainer' en el canvas duplicado.");
+
+                    if (stopButton != null)
+                        chatBotScript.stopButton = stopButton;
+                    else
+                        Debug.LogWarning("❌ No se encontró 'StopButton' dentro del canvas duplicado.");
+
+                    if (llm != null)
+                        chatBotScript.llmCharacter = llm;
+                    else
+                        Debug.LogWarning("❌ No se encontró LLMCharacter dentro del chatbot instanciado.");
+
+                    chatbotsInstanciados.Add(chatBotScript);
+                    chatBotScript.Inicializar();
                 }
                 else
                 {
-                    Debug.LogWarning("❌ No se encontró 'StopButton' dentro del canvas duplicado.");
+                    Debug.LogWarning("❌ No se encontró el script ChatBot en el chatbotInstancia.");
                 }
 
                 canvasInstancia.SetActive(false);
                 chatbotInstancia.SetActive(false);
 
-                // Asignar al ChatTrigger
                 ChatTrigger chatTrigger = personajeInstancia.GetComponentInChildren<ChatTrigger>();
                 if (chatTrigger != null)
                 {
@@ -137,6 +127,7 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
     void GenerarCrimen()
     {
         if (listaPersonajes.Count < 2)
@@ -322,6 +313,10 @@ public class GameManager : MonoBehaviour
 
     void InstanciarPistasFisicas(Collider areaVictima, Collider areaAsesino)
     {
+
+        Character culpable = crimenActual.culprit;
+        Character victima = crimenActual.victim;
+
         GameObject armaPrefab = ObtenerPrefabArma(crimenActual.weapon);
         if (armaPrefab != null && areaAsesino != null)
         {
@@ -339,11 +334,70 @@ public class GameManager : MonoBehaviour
                 {
                     GameObject sangre = prefabsSangre[Random.Range(0, prefabsSangre.Count)];
                     Instantiate(sangre, PosicionAleatoriaEnArea(areaVictima), Quaternion.identity);
+
+                    ScanableObject so = sangre.GetComponent<ScanableObject>();
+                    if (so != null)
+                    {
+                        so.tipoPista = ScanClueType.Sangre;
+                        so.descripcionPista = "Manchas de sangre cerca del cuerpo.";
+                        so.tipoSangre = victima.bloodType.ToString(); // Asume que bloodType es un enum o string
+                    }
                 }
                 if (areaAsesino != null && Random.value < 0.5f)
                 {
                     GameObject sangre = prefabsSangre[Random.Range(0, prefabsSangre.Count)];
                     Instantiate(sangre, PosicionAleatoriaEnArea(areaAsesino), Quaternion.identity);
+
+                    ScanableObject so = sangre.GetComponent<ScanableObject>();
+                    if (so != null)
+                    {
+                        so.tipoPista = ScanClueType.Sangre;
+                        so.descripcionPista = "Manchas de sangre cerca del cuerpo.";
+                        so.tipoSangre = culpable.bloodType.ToString(); // Asume que bloodType es un enum o string
+                    }
+                }
+            }
+        }
+
+        // 🧬 Huellas dactilares (culpable)
+        if (crimenActual.clues.Exists(c => c.clueType == ClueType.HuellasDactilares))
+        {
+            if (prefabsFingerprints != null && prefabsFingerprints.Count > 0 && areaAsesino != null)
+            {
+                GameObject huella = Instantiate(
+                    prefabsFingerprints[Random.Range(0, prefabsFingerprints.Count)],
+                    PosicionAleatoriaEnArea(areaAsesino),
+                    Quaternion.identity
+                );
+
+                ScanableObject so = huella.GetComponent<ScanableObject>();
+                if (so != null)
+                {
+                    so.tipoPista = ScanClueType.HuellasDactilares;
+                    so.descripcionPista = "Huellas encontradas cerca del lugar.";
+                    so.origenHuellasDactilares = $"Código {culpable.fingerprint}";
+                    so.propietarioPista = culpable;
+                }
+            }
+        }
+
+        // 👟 Huellas de zapato (culpable)
+        if (crimenActual.clues.Exists(c => c.clueType == ClueType.MarcaDeZapatos))
+        {
+            if (prefabsFootprints != null && prefabsFootprints.Count > 0 && areaAsesino != null)
+            {
+                GameObject zapato = Instantiate(
+                    prefabsFootprints[Random.Range(0, prefabsFootprints.Count)],
+                    PosicionAleatoriaEnArea(areaAsesino),
+                    Quaternion.identity
+                );
+
+                ScanableObject so = zapato.GetComponent<ScanableObject>();
+                if (so != null)
+                {
+                    so.tipoPista = ScanClueType.HuellasDeZapato;
+                    so.descripcionPista = "Huellas de zapato encontradas en la escena.";
+                    so.tipoZapato = $"Talla {culpable.footSize}";
                 }
             }
         }
@@ -438,8 +492,6 @@ public class GameManager : MonoBehaviour
             if (bot != null && bot.llmCharacter != null)
             {
                 Debug.Log($"🚀 Iniciando warmup de: {bot.gameObject.name}");
-
-                
                 yield return bot.llmCharacter.Warmup(bot.WarmUpCallback);
             }
             else
@@ -448,4 +500,5 @@ public class GameManager : MonoBehaviour
             }
         }
     }
-}
+} 
+

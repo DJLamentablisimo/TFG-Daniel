@@ -3,13 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using static Enums;
 
+public enum BloodType
+{
+    A,
+    B,
+    O,
+    AB
+}
+
 [System.Serializable]
 public class Character : MonoBehaviour
 {
     public string nombre;
     public int edad;
     public string ocupacion;
-    public string personalidad; 
+    public string personalidad;
+    public BloodType bloodType;
+    public int fingerprint;
+    public int footSize;
     public CharacterRole rol;
 
     // Otros datos adicionales

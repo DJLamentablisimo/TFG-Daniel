@@ -127,6 +127,9 @@ MonoBehaviour:
   edad: 32
   ocupacion: Cirujano
   personalidad: "Pragm\xE1tico"
+  bloodType: 2
+  fingerprint: 3
+  footSize: 42
   rol: 0
   tieneRasgoExtra: 0
   haPresenciadoAlgoImportante: 0
@@ -148,6 +151,8 @@ MonoBehaviour:
   tieneHuellas: 0
   tipoHuellas: Desconocidas
   tipoSangre: Desconocido
+  origenHuellasDactilares: No identificado
+  tipoZapato: Desconocido
   abreCanvasResolucion: 0
   canvasResolucion: {fileID: 0}
 --- !u!54 &1612247374160532345
