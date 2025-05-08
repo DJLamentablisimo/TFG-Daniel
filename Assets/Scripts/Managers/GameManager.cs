@@ -49,7 +49,7 @@ public class GameManager : MonoBehaviour
 
         // Generación del crimen
         GenerarCrimen();
-        StartCoroutine(PrecalentarTodosLosChatbots());
+       // StartCoroutine(PrecalentarTodosLosChatbots());
 
         string jsonCrime = JsonUtility.ToJson(crimenActual, true);
         Debug.Log("Crimen generado en formato JSON:\n" + jsonCrime);
@@ -57,7 +57,77 @@ public class GameManager : MonoBehaviour
         InstanciarElementosFisicos();
         StartCoroutine(PrecalentarTodosLosChatbots());
     }
+    /*
+        void GenerarPersonajes()
+        {
+            List<GameObject> seleccionados = new List<GameObject>();
 
+            while (seleccionados.Count < 4 && characterPrefabs.Length > 0)
+            {
+                GameObject personajePrefab = characterPrefabs[Random.Range(0, characterPrefabs.Length)];
+                if (!seleccionados.Contains(personajePrefab))
+                {
+                    // Instanciar personaje
+                    GameObject personajeInstancia = Instantiate(personajePrefab);
+                    seleccionados.Add(personajePrefab);
+                    listaPersonajes.Add(personajeInstancia.GetComponent<Character>());
+
+                    // Instanciar Canvas y Chatbot únicos
+                    GameObject canvasInstancia = Instantiate(canvasPrefab);
+                    canvasInstancia.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+                    GameObject chatbotInstancia = Instantiate(chatbotPrefab);
+
+
+                    // Buscar el container dentro del canvas recién instanciado
+                    Transform container = canvasInstancia.transform.Find("ChatPanel");
+                    Button stopButton = canvasInstancia.transform.Find("StopButton")?.GetComponent<Button>();
+                    LLMCharacter llm = chatbotInstancia.GetComponentInChildren<LLMCharacter>();
+                    ChatBot chatBotScript = chatbotInstancia.GetComponent<ChatBot>();
+
+                    if (chatBotScript != null)
+                    {
+                        if (container != null)
+                            chatBotScript.chatContainer = container;
+                        else
+                            Debug.LogWarning("❌ No se encontró 'ChatContainer' en el canvas duplicado.");
+
+                        if (stopButton != null)
+                            chatBotScript.stopButton = stopButton;
+                        else
+                            Debug.LogWarning("❌ No se encontró 'StopButton' dentro del canvas duplicado.");
+
+                        if (llm != null)
+                            chatBotScript.llmCharacter = llm;
+                        else
+                            Debug.LogWarning("❌ No se encontró LLMCharacter dentro del chatbot instanciado.");
+
+                        chatbotsInstanciados.Add(chatBotScript);
+                        chatBotScript.Inicializar();
+                    }
+                    else
+                    {
+                        Debug.LogWarning("❌ No se encontró el script ChatBot en el chatbotInstancia.");
+                    }
+
+                    canvasInstancia.SetActive(false);
+                    chatbotInstancia.SetActive(false);
+
+                    ChatTrigger chatTrigger = personajeInstancia.GetComponentInChildren<ChatTrigger>();
+                    if (chatTrigger != null)
+                    {
+                        chatTrigger.chatCanvas = canvasInstancia;
+                        chatTrigger.chatbot = chatbotInstancia;
+
+                        Debug.Log($"✅ Asignados canvas y chatbot a {personajeInstancia.name}");
+                    }
+                    else
+                    {
+                        Debug.LogWarning($"⚠️ {personajeInstancia.name} no tiene ChatTrigger");
+                    }
+                }
+            }
+        }
+    */
     void GenerarPersonajes()
     {
         List<GameObject> seleccionados = new List<GameObject>();
@@ -80,38 +150,48 @@ public class GameManager : MonoBehaviour
 
                 // Buscar el container dentro del canvas recién instanciado
                 Transform container = canvasInstancia.transform.Find("ChatPanel");
-                Button stopButton = canvasInstancia.transform.Find("StopButton")?.GetComponent<Button>();
-                LLMCharacter llm = chatbotInstancia.GetComponentInChildren<LLMCharacter>();
-                ChatBot chatBotScript = chatbotInstancia.GetComponent<ChatBot>();
-
-                if (chatBotScript != null)
+                if (container != null)
                 {
-                    if (container != null)
+                    ChatBot chatBotScript = chatbotInstancia.GetComponent<ChatBot>();
+                    if (chatBotScript != null)
+                    {
                         chatBotScript.chatContainer = container;
+                        chatbotsInstanciados.Add(chatBotScript);
+                    }
                     else
-                        Debug.LogWarning("❌ No se encontró 'ChatContainer' en el canvas duplicado.");
-
-                    if (stopButton != null)
-                        chatBotScript.stopButton = stopButton;
-                    else
-                        Debug.LogWarning("❌ No se encontró 'StopButton' dentro del canvas duplicado.");
-
-                    if (llm != null)
-                        chatBotScript.llmCharacter = llm;
-                    else
-                        Debug.LogWarning("❌ No se encontró LLMCharacter dentro del chatbot instanciado.");
-
-                    chatbotsInstanciados.Add(chatBotScript);
-                    chatBotScript.Inicializar();
+                    {
+                        Debug.LogWarning("❌ No se encontró ChatBot en el chatbotInstancia.");
+                    }
                 }
                 else
                 {
-                    Debug.LogWarning("❌ No se encontró el script ChatBot en el chatbotInstancia.");
+                    Debug.LogWarning("❌ No se encontró 'ChatContainer' en el canvas duplicado.");
+                }
+
+                // Buscar el StopButton dentro del Canvas instanciado
+                Button stopButton = canvasInstancia.transform.Find("StopButton")?.GetComponent<Button>();
+
+                if (stopButton != null)
+                {
+                    ChatBot chatBotScript = chatbotInstancia.GetComponent<ChatBot>();
+                    if (chatBotScript != null)
+                    {
+                        chatBotScript.stopButton = stopButton;
+                    }
+                    else
+                    {
+                        Debug.LogWarning("❌ No se encontró el script ChatBot en el chatbotInstancia.");
+                    }
+                }
+                else
+                {
+                    Debug.LogWarning("❌ No se encontró 'StopButton' dentro del canvas duplicado.");
                 }
 
                 canvasInstancia.SetActive(false);
                 chatbotInstancia.SetActive(false);
 
+                // Asignar al ChatTrigger
                 ChatTrigger chatTrigger = personajeInstancia.GetComponentInChildren<ChatTrigger>();
                 if (chatTrigger != null)
                 {
@@ -127,7 +207,6 @@ public class GameManager : MonoBehaviour
             }
         }
     }
-
     void GenerarCrimen()
     {
         if (listaPersonajes.Count < 2)

@@ -12,10 +12,13 @@ Orden de tareas hechas:
 - Implementación de spawneo de arma del crimen
 - Implementación de spawneo de sangre en crímenes específicos.
 - Implementación de dos chatbots independientes.
+- Arreglo solapación de burbujas de diálogo
+- Implementación de mecánica de resolución del caso
+- Aumento de tipos de pistas (Huellas dactilares y Huellas de zapato)
 
 
 A REALIZAR:
- - Arreglar problema chatbots solapándose en el canvas   (X)
- - Aumentar numero de pistas que se instancian		 (X) 
- - Resolución del caso					 (X)
- - Evolucionar algoritmo de generación para añadir mas complejidad
+ - Arreglar problema chatbots solapándose en el canvas   (X) ✔?
+ - Aumentar numero de pistas que se instancian		 (X) ✔
+ - Resolución del caso					 (X) ✔
+ - Evolucionar algoritmo de generación para añadir mas complejidad  (Investigandolo)

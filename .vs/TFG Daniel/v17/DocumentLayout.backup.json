@@ -81,21 +81,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "CrimenSolver.cs",
-              "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\CrimenSolver.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CrimenSolver.cs",
-              "ToolTip": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\CrimenSolver.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CrimenSolver.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T09:42:57.881Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 15,
@@ -106,8 +93,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Bubble.cs",
               "ViewState": "AgIAALYAAAAAAAAAAAAowPgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T09:47:08.234Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-14T09:47:08.234Z"
             },
             {
               "$type": "Document",
@@ -119,8 +105,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Scanning\\ScanableObject.cs",
               "ViewState": "AgIAAEEAAAAAAAAAAAAwwFgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T10:11:16.904Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T10:11:16.904Z"
             },
             {
               "$type": "Document",
@@ -132,8 +117,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Managers\\DialogueManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T09:54:43.342Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-14T09:54:43.342Z"
             },
             {
               "$type": "Document",
@@ -146,6 +130,31 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\Managers\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\GameManager.cs",
+              "ToolTip": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\Managers\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Managers\\GameManager.cs",
+              "ViewState": "AgIAAAoBAAAAAAAAAAAwwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T11:35:24.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CrimenSolver.cs",
+              "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\CrimenSolver.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CrimenSolver.cs",
+              "ToolTip": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\CrimenSolver.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CrimenSolver.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T09:42:57.881Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 11,
               "Title": "LLM.cs",
               "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\LLMUnity\\Runtime\\LLM.cs",
@@ -154,8 +163,7 @@
               "RelativeToolTip": "Assets\\LLMUnity\\Runtime\\LLM.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T11:35:30.017Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T11:35:30.017Z"
             },
             {
               "$type": "Document",
@@ -167,8 +175,7 @@
               "RelativeToolTip": "Assets\\LLMUnity\\Runtime\\LLMCharacter.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T11:35:17.526Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T11:35:17.526Z"
             },
             {
               "$type": "Document",
@@ -180,8 +187,7 @@
               "RelativeToolTip": "Assets\\Scripts\\ChatTrigger.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAQwC8AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T11:19:23.359Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T11:19:23.359Z"
             },
             {
               "$type": "Document",
@@ -193,21 +199,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Scanning\\Scanner.cs",
               "ViewState": "AgIAAGEAAAAAAAAAAAAUwIYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T10:09:52.604Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\Managers\\GameManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\GameManager.cs",
-              "ToolTip": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\Managers\\GameManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Managers\\GameManager.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAowCsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T11:35:24.236Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T10:09:52.604Z"
             },
             {
               "$type": "Document",
@@ -219,8 +211,7 @@
               "RelativeToolTip": "Assets\\Scripts\\FirstPersonController.cs",
               "ViewState": "AgIAAEgAAAAAAAAAAAAowBgAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T12:32:59.848Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-16T12:32:59.848Z"
             },
             {
               "$type": "Document",
@@ -232,8 +223,7 @@
               "RelativeToolTip": "Assets\\Scripts\\PressKeyOpenDoor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T12:32:52.317Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-16T12:32:52.317Z"
             },
             {
               "$type": "Document",
@@ -245,8 +235,7 @@
               "RelativeToolTip": "Assets\\Scripts\\ChatBot.cs",
               "ViewState": "AgIAALAAAAAAAAAAAADwv9AAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T11:56:39.714Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-16T11:56:39.714Z"
             },
             {
               "$type": "Document",
@@ -258,8 +247,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Models\\Crime.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T11:57:41.818Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-07T11:57:41.818Z"
             },
             {
               "$type": "Document",
@@ -271,8 +259,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Models\\Enums.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T11:44:17.265Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-07T11:44:17.265Z"
             },
             {
               "$type": "Document",
@@ -284,8 +271,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Models\\Clue.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T11:34:42.713Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-07T11:34:42.713Z"
             },
             {
               "$type": "Document",
@@ -297,8 +283,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Models\\Character.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T11:20:22.921Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-07T11:20:22.921Z"
             },
             {
               "$type": "Document",
