@@ -18,7 +18,8 @@ Orden de tareas hechas:
 
 
 A REALIZAR:
- - Arreglar problema chatbots solapándose en el canvas   (X) ✔?
- - Aumentar numero de pistas que se instancian		 (X) ✔
- - Resolución del caso					 (X) ✔
+ - Arreglar problema chatbots 
  - Evolucionar algoritmo de generación para añadir mas complejidad  (Investigandolo)
+ - Implementación funcionalidad huellas
+ - Evento de resolución
+ 
