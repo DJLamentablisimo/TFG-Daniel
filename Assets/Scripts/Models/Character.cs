@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using static Enums;
 
+public enum RasgoExtra { AcentoExtranjero, MienteConFacilidad, TicsNerviosos, MuyConfiado, Exagerado, Contradictorio, Religioso}
 public enum BloodType
 {
     A,
@@ -22,9 +23,10 @@ public class Character : MonoBehaviour
     public int fingerprint;
     public int footSize;
     public CharacterRole rol;
+    public RasgoExtra? rasgoExtra;
 
     // Otros datos adicionales
-    public bool tieneRasgoExtra;  // Para el añadido (ej. acento extraño, expresiones peculiares, etc.)
+    public bool tieneRasgoExtra;
     public bool haPresenciadoAlgoImportante; // Para el añadido del testigo.
 
     // Constructor (opcional)

@@ -138,12 +138,21 @@ public class GameManager : MonoBehaviour
             GameObject personajePrefab = characterPrefabs[Random.Range(0, characterPrefabs.Length)];
             if (!seleccionados.Contains(personajePrefab))
             {
+
                 // Instanciar personaje
                 GameObject personajeInstancia = Instantiate(personajePrefab);
                 seleccionados.Add(personajePrefab);
 
                 Character character = personajeInstancia.GetComponent<Character>();
                 listaPersonajes.Add(character);
+
+                if (Random.value < 0.5f) // 50% de probabilidad (ajusta a gusto)
+                {
+                    character.tieneRasgoExtra = true;
+
+                    // Si implementaste el enum RasgoExtra:
+                    character.rasgoExtra = (RasgoExtra)Random.Range(0, System.Enum.GetValues(typeof(RasgoExtra)).Length);
+                }
 
                 // Instanciar Canvas y Chatbot únicos
                 GameObject canvasInstancia = Instantiate(canvasPrefab);
@@ -286,11 +295,10 @@ public class GameManager : MonoBehaviour
             ClueType.Sangre,
             ClueType.HuellasDactilares,
             ClueType.MarcaDeZapatos,
-            ClueType.Nota,
         };
 
         // Agregar pistas adicionales aleatorias de una lista de opciones
-        int numAditionalClues = 2;
+        int numAditionalClues = Random.Range(3, 6);
         for (int i = 0; i < numAditionalClues; i++)
         {
             int indicePista = UnityEngine.Random.Range(0, posiblesClues.Length);
@@ -308,15 +316,13 @@ public class GameManager : MonoBehaviour
                 case ClueType.MarcaDeZapatos:
                     descripcion = "Huella de zapatos cerca del escenario";
                     break;
-                case ClueType.Nota:
-                    descripcion = "Una nota críptica encontrada en la escena";
-                    break;
             }
 
             bool yaExiste = crimenActual.clues.Exists(c => c.clueType == pistaSeleccionada);
+            bool esFalsa = Random.value < 0.3f;
             if (!yaExiste)
             {
-                crimenActual.clues.Add(new Clue(pistaSeleccionada, descripcion));
+                crimenActual.clues.Add(new Clue(pistaSeleccionada, descripcion, esFalsa));
             }
         }
 
@@ -574,10 +580,15 @@ public class GameManager : MonoBehaviour
         }
 
         string rol = $"Tu personaje es el de {(personaje == crimenActual.culprit ? "CULPABLE" : personaje == crimenActual.victim ? "VÍCTIMA" : "TESTIGO")}.\n";
+        string rasgoExtra = "";
+        if (personaje.tieneRasgoExtra && personaje.rasgoExtra.HasValue)
+        {
+            rasgoExtra = $"\n\nAdemás, tu personaje tiene un rasgo distintivo: {personaje.rasgoExtra.ToString().Replace('_', ' ')}. Tenlo en cuenta al responder.\n";
+        }
 
         string instruccion = "Sigue el interrogatorio del jugador de la forma más natural posible, responde como si fueras ese personaje.";
 
-        return intro + personajes + datosCrimen + pistas + "\n" + rol + instruccion;
+        return intro + personajes + datosCrimen + pistas + "\n" + rol + rasgoExtra + instruccion;
     }
 
     IEnumerator PrecalentarTodosLosChatbots()
