@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2300000}
   - component: {fileID: 8307247157058108154}
   - component: {fileID: 1774804722312335553}
+  - component: {fileID: 4268653084601510540}
   m_Layer: 8
   m_Name: blood3
   m_TagString: Untagged
@@ -103,6 +104,11 @@ MonoBehaviour:
   tieneHuellas: 0
   tipoHuellas: Desconocidas
   tipoSangre: Desconocido
+  origenHuellasDactilares: No identificado
+  propietarioPista: {fileID: 0}
+  tipoZapato: Desconocido
+  abreCanvasResolucion: 0
+  canvasResolucion: {fileID: 0}
 --- !u!65 &1774804722312335553
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -124,3 +130,17 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10, y: 2.220446e-16, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4268653084601510540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b69de44447514984ead44397f348feb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clueType: 0
+  descripcion: 

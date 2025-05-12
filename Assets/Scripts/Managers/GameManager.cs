@@ -3,6 +3,7 @@ using LLMUnitySamples;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.TextCore.Text;
 using UnityEngine.UI;
 using static Enums;
 
@@ -49,7 +50,7 @@ public class GameManager : MonoBehaviour
 
         // Generación del crimen
         GenerarCrimen();
-       // StartCoroutine(PrecalentarTodosLosChatbots());
+        DesactivarInteraccionVictima();
 
         string jsonCrime = JsonUtility.ToJson(crimenActual, true);
         Debug.Log("Crimen generado en formato JSON:\n" + jsonCrime);
@@ -89,24 +90,24 @@ public class GameManager : MonoBehaviour
                         if (container != null)
                             chatBotScript.chatContainer = container;
                         else
-                            Debug.LogWarning("❌ No se encontró 'ChatContainer' en el canvas duplicado.");
+                            Debug.LogWarning("No se encontró 'ChatContainer' en el canvas duplicado.");
 
                         if (stopButton != null)
                             chatBotScript.stopButton = stopButton;
                         else
-                            Debug.LogWarning("❌ No se encontró 'StopButton' dentro del canvas duplicado.");
+                            Debug.LogWarning("No se encontró 'StopButton' dentro del canvas duplicado.");
 
                         if (llm != null)
                             chatBotScript.llmCharacter = llm;
                         else
-                            Debug.LogWarning("❌ No se encontró LLMCharacter dentro del chatbot instanciado.");
+                            Debug.LogWarning("No se encontró LLMCharacter dentro del chatbot instanciado.");
 
                         chatbotsInstanciados.Add(chatBotScript);
                         chatBotScript.Inicializar();
                     }
                     else
                     {
-                        Debug.LogWarning("❌ No se encontró el script ChatBot en el chatbotInstancia.");
+                        Debug.LogWarning("No se encontró el script ChatBot en el chatbotInstancia.");
                     }
 
                     canvasInstancia.SetActive(false);
@@ -118,11 +119,11 @@ public class GameManager : MonoBehaviour
                         chatTrigger.chatCanvas = canvasInstancia;
                         chatTrigger.chatbot = chatbotInstancia;
 
-                        Debug.Log($"✅ Asignados canvas y chatbot a {personajeInstancia.name}");
+                        Debug.Log($"Asignados canvas y chatbot a {personajeInstancia.name}");
                     }
                     else
                     {
-                        Debug.LogWarning($"⚠️ {personajeInstancia.name} no tiene ChatTrigger");
+                        Debug.LogWarning($"{personajeInstancia.name} no tiene ChatTrigger");
                     }
                 }
             }
@@ -140,7 +141,9 @@ public class GameManager : MonoBehaviour
                 // Instanciar personaje
                 GameObject personajeInstancia = Instantiate(personajePrefab);
                 seleccionados.Add(personajePrefab);
-                listaPersonajes.Add(personajeInstancia.GetComponent<Character>());
+
+                Character character = personajeInstancia.GetComponent<Character>();
+                listaPersonajes.Add(character);
 
                 // Instanciar Canvas y Chatbot únicos
                 GameObject canvasInstancia = Instantiate(canvasPrefab);
@@ -157,15 +160,17 @@ public class GameManager : MonoBehaviour
                     {
                         chatBotScript.chatContainer = container;
                         chatbotsInstanciados.Add(chatBotScript);
+
                     }
                     else
                     {
-                        Debug.LogWarning("❌ No se encontró ChatBot en el chatbotInstancia.");
+                        Debug.LogWarning("No se encontró ChatBot en el chatbotInstancia.");
                     }
+
                 }
                 else
                 {
-                    Debug.LogWarning("❌ No se encontró 'ChatContainer' en el canvas duplicado.");
+                    Debug.LogWarning("No se encontró 'ChatContainer' en el canvas duplicado.");
                 }
 
                 // Buscar el StopButton dentro del Canvas instanciado
@@ -180,12 +185,12 @@ public class GameManager : MonoBehaviour
                     }
                     else
                     {
-                        Debug.LogWarning("❌ No se encontró el script ChatBot en el chatbotInstancia.");
+                        Debug.LogWarning("No se encontró el script ChatBot en el chatbotInstancia.");
                     }
                 }
                 else
                 {
-                    Debug.LogWarning("❌ No se encontró 'StopButton' dentro del canvas duplicado.");
+                    Debug.LogWarning("No se encontró 'StopButton' dentro del canvas duplicado.");
                 }
 
                 canvasInstancia.SetActive(false);
@@ -195,14 +200,23 @@ public class GameManager : MonoBehaviour
                 ChatTrigger chatTrigger = personajeInstancia.GetComponentInChildren<ChatTrigger>();
                 if (chatTrigger != null)
                 {
-                    chatTrigger.chatCanvas = canvasInstancia;
-                    chatTrigger.chatbot = chatbotInstancia;
-
-                    Debug.Log($"✅ Asignados canvas y chatbot a {personajeInstancia.name}");
+                    if (character.rol == CharacterRole.Victima)
+                    {
+                        // ❌ Desactivar el chat si es la víctima
+                        chatTrigger.chatCanvas = null;
+                        chatTrigger.chatbot = null;
+                        Debug.Log($"Chat deshabilitado para la víctima {character.nombre}");
+                    }
+                    else
+                    {
+                        chatTrigger.chatCanvas = canvasInstancia;
+                        chatTrigger.chatbot = chatbotInstancia;
+                        Debug.Log($"Asignados canvas y chatbot a {character.nombre}");
+                    }
                 }
                 else
                 {
-                    Debug.LogWarning($"⚠️ {personajeInstancia.name} no tiene ChatTrigger");
+                    Debug.LogWarning($"{personajeInstancia.name} no tiene ChatTrigger");
                 }
             }
         }
@@ -316,11 +330,11 @@ public class GameManager : MonoBehaviour
                 {
                     string prompt = GenerarPromptParaPersonaje(personaje);
                     chatBotScript.llmCharacter.SetPrompt(prompt, true);                
-                    Debug.Log($"🧠 Prompt asignado a {personaje.nombre}:\n{prompt}");
+                    Debug.Log($"Prompt asignado a {personaje.nombre}:\n{prompt}");
                 }
                 else
                 {
-                    Debug.LogWarning($"❌ El ChatBot de {personaje.nombre} no tiene LLMCharacter asignado en el componente ChatBot.");
+                    Debug.LogWarning($"El ChatBot de {personaje.nombre} no tiene LLMCharacter asignado en el componente ChatBot.");
                 }
             }
         }
@@ -412,7 +426,6 @@ public class GameManager : MonoBehaviour
                 if (areaVictima != null)
                 {
                     GameObject sangre = prefabsSangre[Random.Range(0, prefabsSangre.Count)];
-                    Instantiate(sangre, PosicionAleatoriaEnArea(areaVictima), Quaternion.identity);
 
                     ScanableObject so = sangre.GetComponent<ScanableObject>();
                     if (so != null)
@@ -420,12 +433,13 @@ public class GameManager : MonoBehaviour
                         so.tipoPista = ScanClueType.Sangre;
                         so.descripcionPista = "Manchas de sangre cerca del cuerpo.";
                         so.tipoSangre = victima.bloodType.ToString(); // Asume que bloodType es un enum o string
+                        so.propietarioPista = victima;
                     }
+                    Instantiate(sangre, PosicionAleatoriaEnArea(areaVictima), Quaternion.identity);
                 }
                 if (areaAsesino != null && Random.value < 0.5f)
                 {
                     GameObject sangre = prefabsSangre[Random.Range(0, prefabsSangre.Count)];
-                    Instantiate(sangre, PosicionAleatoriaEnArea(areaAsesino), Quaternion.identity);
 
                     ScanableObject so = sangre.GetComponent<ScanableObject>();
                     if (so != null)
@@ -433,7 +447,9 @@ public class GameManager : MonoBehaviour
                         so.tipoPista = ScanClueType.Sangre;
                         so.descripcionPista = "Manchas de sangre cerca del cuerpo.";
                         so.tipoSangre = culpable.bloodType.ToString(); // Asume que bloodType es un enum o string
+                        so.propietarioPista = culpable;
                     }
+                    Instantiate(sangre, PosicionAleatoriaEnArea(areaAsesino), Quaternion.identity);
                 }
             }
         }
@@ -577,6 +593,25 @@ public class GameManager : MonoBehaviour
             {
                 Debug.LogWarning($"⚠️ ChatBot inválido o sin LLMCharacter: {bot?.gameObject.name ?? "null"}");
             }
+        }
+    }
+
+    void DesactivarInteraccionVictima()
+    {
+        if (crimenActual?.victim == null) return;
+
+        ChatTrigger chatTrigger = crimenActual.victim.GetComponentInChildren<ChatTrigger>();
+        if (chatTrigger != null)
+        {
+            Collider triggerCollider = chatTrigger.GetComponent<Collider>();
+            if (triggerCollider != null && triggerCollider.isTrigger)
+            {
+                triggerCollider.enabled = false;
+                Debug.Log($"☠️ Collider de interacción desactivado para la víctima: {crimenActual.victim.nombre}");
+            }
+
+            // Como refuerzo, también puedes desactivar el script entero
+            chatTrigger.enabled = false;
         }
     }
 } 

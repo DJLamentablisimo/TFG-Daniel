@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2300000}
   - component: {fileID: 8602970276088417721}
   - component: {fileID: 5088871487653286366}
+  - component: {fileID: 7975377663631066198}
   m_Layer: 8
   m_Name: blood4
   m_TagString: Untagged
@@ -98,11 +99,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tipoPista: 2
-  descripcionPista: Mancha de Sangre
+  descripcionPista: Manchas de sangre cerca del cuerpo.
   tipoArma: 0
   tieneHuellas: 0
   tipoHuellas: Desconocidas
-  tipoSangre: Desconocido
+  tipoSangre: B
+  origenHuellasDactilares: No identificado
+  propietarioPista: {fileID: 0}
+  tipoZapato: Desconocido
+  abreCanvasResolucion: 0
+  canvasResolucion: {fileID: 0}
 --- !u!65 &5088871487653286366
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -124,3 +130,17 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10, y: 2.220446e-16, z: 9.999999}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7975377663631066198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b69de44447514984ead44397f348feb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clueType: 0
+  descripcion: 

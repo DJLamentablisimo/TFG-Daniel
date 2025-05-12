@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 4565933014089666117}
   - component: {fileID: 3757030133156006640}
   - component: {fileID: 3937777520436914615}
+  - component: {fileID: -8585464667930949759}
+  - component: {fileID: 4086542413260103931}
   m_Layer: 8
   m_Name: Fingerprint 2
   m_TagString: Untagged
@@ -103,6 +105,43 @@ MonoBehaviour:
   tipoHuellas: Desconocidas
   tipoSangre: Desconocido
   origenHuellasDactilares: No identificado
+  propietarioPista: {fileID: 0}
   tipoZapato: Desconocido
   abreCanvasResolucion: 0
   canvasResolucion: {fileID: 0}
+--- !u!114 &-8585464667930949759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5909658715331155101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b69de44447514984ead44397f348feb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clueType: 1
+  descripcion: 'Huellas dactilares encontradas en el escenario del crimen. Tipo de
+    huella: 2'
+--- !u!65 &4086542413260103931
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5909658715331155101}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10, y: 2.220446e-16, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}

@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class ChatTrigger : MonoBehaviour
 {
@@ -10,20 +10,25 @@ public class ChatTrigger : MonoBehaviour
 
     void Start()
     {
-        if (chatCanvas == null)
+       /* if (chatCanvas == null)
         {
             chatCanvas = GameObject.Find("CanvasChat");
         }
         if (chatbot == null)
         {
             chatbot = GameObject.Find("ChatBot");
-        }
+        }*/
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player") && !hasInteracted)
         {
+            if (chatCanvas == null || chatbot == null)
+            {
+                Debug.Log("Este personaje no tiene conversación disponible.");
+                return;
+            }
             chatCanvas.SetActive(true);
             chatbot.SetActive(true);
             Cursor.lockState = CursorLockMode.None;
@@ -37,7 +42,7 @@ public class ChatTrigger : MonoBehaviour
             }
 
             conversationStarted = true;
-            hasInteracted = true; // Marcamos que ya se activ�
+            hasInteracted = true; // Marcamos que ya se activó
         }
     }
 
@@ -48,13 +53,13 @@ public class ChatTrigger : MonoBehaviour
             chatCanvas.SetActive(false);
             chatbot.SetActive(false);
             conversationStarted = false;
-            hasInteracted = false; // Permitimos que vuelva a activarse la pr�xima vez que entre
+            hasInteracted = false; // Permitimos que vuelva a activarse la próxima vez que entre
         }
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && chatCanvas.activeSelf)
+        if (Input.GetKeyDown(KeyCode.Escape) && chatCanvas != null)
         {
             CerrarCanvas();
         }
