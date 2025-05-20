@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657832, g: 0.49641222, b: 0.57481664, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -592,20 +591,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   advancedOptions: 0
   remote: 0
-  llm: {fileID: 1047848254}
+  _llm: {fileID: 1047848254}
+  APIKey: 
   host: localhost
   port: 13333
   numRetries: 10
-  APIKey: 
   save: 
   saveCache: 0
   debugPrompt: 0
-  stream: 1
+  numPredict: 256
+  slot: -1
   grammar: 
   cachePrompt: 1
-  slot: -1
   seed: 0
-  numPredict: 256
   temperature: 0.2
   topK: 40
   topP: 0.9
@@ -625,6 +623,7 @@ MonoBehaviour:
   ignoreEos: 0
   nKeep: -1
   stop: []
+  stream: 1
   playerName: Human
   AIName: Adam
   prompt: A chat between a curious human and an artificial intelligence assistant
@@ -1526,9 +1525,8 @@ MonoBehaviour:
   dontDestroyOnLoad: 1
   contextSize: 8192
   batchSize: 512
-  basePrompt: 
-  model: 
-  chatTemplate: chatml
+  model: Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf
+  chatTemplate: llama3 chat
   lora: 
   loraWeights: 
   flashAttention: 0
@@ -1538,7 +1536,9 @@ MonoBehaviour:
   SSLKey: 
   SSLKeyPath: 
   minContextLength: 0
-  maxContextLength: 0
+  maxContextLength: 131072
+  embeddingsOnly: 0
+  embeddingLength: 4096
 --- !u!4 &1047848255
 Transform:
   m_ObjectHideFlags: 0
@@ -1970,20 +1970,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   advancedOptions: 0
   remote: 0
-  llm: {fileID: 1047848254}
+  _llm: {fileID: 1047848254}
+  APIKey: 
   host: localhost
   port: 13333
   numRetries: 10
-  APIKey: 
   save: 
   saveCache: 0
   debugPrompt: 0
-  stream: 1
+  numPredict: 256
+  slot: -1
   grammar: 
   cachePrompt: 1
-  slot: -1
   seed: 0
-  numPredict: 256
   temperature: 0.2
   topK: 40
   topP: 0.9
@@ -2003,6 +2002,7 @@ MonoBehaviour:
   ignoreEos: 0
   nKeep: -1
   stop: []
+  stream: 1
   playerName: Human
   AIName: Eve
   prompt: A chat between a curious human and an artificial intelligence assistant

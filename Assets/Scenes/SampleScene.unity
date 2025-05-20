@@ -1277,8 +1277,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60647d6f1ddd5d4428dd4f35dac43b86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chatCanvas: {fileID: 1642431067}
-  chatbot: {fileID: 729539055}
+  chatCanvas: {fileID: 736347352}
+  chatbot: {fileID: 2050009629}
 --- !u!135 &172643018
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4606,7 +4606,19 @@ MonoBehaviour:
   stream: 1
   playerName: user
   AIName: assistant
-  prompt: 
+  prompt: "Eres un personaje jugable dentro de un videojuego de simulaci\xF3n de
+    cr\xEDmenes generados de forma procedural, el cual ser\xE1 interrogado por el
+    jugador, no te salgas del personaje. \n\nLos distintos personajes son\r\n los
+    siguientes: Edmund Gandia, 32 a\xF1os, Cirujano, personalidad pragm\xE1tica;
+    Clara\r\n Cebique, 24 a\xF1os, estudiante, personalidad nerviosa; Gerard Tule,
+    47 a\xF1os, abogado,\r\npersonalidad Optimista; Calvo Otelo, 36 a\xF1os, profesor,
+    personalidad desorganizada. \n\nLos datos del crimen actual son:\n- Asesino =
+    Edmund Gandia\n- V\xEDctima = Clara Cebique\n- Lugar = Salon2\n- Motivo = Robo\n-
+    Arma = Veneno\n- Pistas disponibles:\n  \u2022 Bote de veneno; sustancia t\xF3xica\n 
+    \u2022 Huellas dactilares en superficies\n  \u2022 Manchas de sangre en el lugar
+    del crimen\n  \u2022 Huella de zapatos cerca del escenario\n\nTu personaje es
+    el de Calvo TESTIGO.\nSigue el interrogatorio del jugador de la forma m\xE1s
+    natural posible, responde como si fueras ese personaje."
   setNKeepToPrompt: 1
   chat: []
   grammarString: 
@@ -7214,8 +7226,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60647d6f1ddd5d4428dd4f35dac43b86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chatCanvas: {fileID: 0}
-  chatbot: {fileID: 0}
+  chatCanvas: {fileID: 887104623}
+  chatbot: {fileID: 6533205}
 --- !u!135 &707821730
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13657,7 +13669,19 @@ MonoBehaviour:
   stream: 1
   playerName: user
   AIName: assistant
-  prompt: 
+  prompt: "Eres un personaje jugable dentro de un videojuego de simulaci\xF3n de
+    cr\xEDmenes generados de forma procedural, el cual ser\xE1 interrogado por el
+    jugador, no te salgas del personaje. \n\nLos distintos personajes son\r\n los
+    siguientes: Edmund Gandia, 32 a\xF1os, Cirujano, personalidad pragm\xE1tica;
+    Clara\r\n Cebique, 24 a\xF1os, estudiante, personalidad nerviosa; Gerard Tule,
+    47 a\xF1os, abogado,\r\npersonalidad Optimista; Calvo Otelo, 36 a\xF1os, profesor,
+    personalidad desorganizada. \n\nLos datos del crimen actual son:\n- Asesino =
+    Edmund Gandia\n- V\xEDctima = Clara Cebique\n- Lugar = Salon2\n- Motivo = Robo\n-
+    Arma = Veneno\n- Pistas disponibles:\n  \u2022 Bote de veneno; sustancia t\xF3xica\n 
+    \u2022 Huellas dactilares en superficies\n  \u2022 Manchas de sangre en el lugar
+    del crimen\n  \u2022 Huella de zapatos cerca del escenario\n\nTu personaje es
+    el de Clara TESTIGO.\nSigue el interrogatorio del jugador de la forma m\xE1s
+    natural posible, responde como si fueras ese personaje."
   setNKeepToPrompt: 1
   chat: []
   grammarString: 
@@ -20237,10 +20261,10 @@ MonoBehaviour:
   debug: 0
   parallelPrompts: -1
   dontDestroyOnLoad: 1
-  contextSize: 8192
+  contextSize: 50958
   batchSize: 512
   model: Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf
-  chatTemplate: llama3 chat
+  chatTemplate: llama chat
   lora: 
   loraWeights: 
   flashAttention: 0

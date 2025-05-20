@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using System;
 using LLMUnity;
+using System.Collections;
 
 namespace LLMUnitySamples
 {
@@ -216,18 +217,6 @@ namespace LLMUnitySamples
             return inputFieldObject;
         }
 
-      /*  public void FixCaretSorting()
-        {
-            GameObject caret = GameObject.Find($"{inputField.name} Input Caret");
-            Canvas bubbleCanvas = caret.GetComponent<Canvas>();
-            if (bubbleCanvas == null)
-            {
-                bubbleCanvas = caret.AddComponent<Canvas>();
-                bubbleCanvas.overrideSorting = true;
-                bubbleCanvas.sortingOrder = 3;
-            }
-        }
-        */
         public void FixCaretSorting()
         {
             GameObject caret = GameObject.Find($"{inputField.name} Input Caret");
@@ -298,6 +287,15 @@ namespace LLMUnitySamples
         public void ActivateInputField()
         {
             inputField.ActivateInputField();
+            UnityEngine.MonoBehaviour mono = inputField.GetComponent<MonoBehaviour>();
+            if (mono != null)
+                mono.StartCoroutine(DelayedFixCaret());
+        }
+
+        private IEnumerator DelayedFixCaret()
+        {
+            yield return null;       // esperar 1 frame
+            yield return null;       // esperar otro más por seguridad
             FixCaretSorting();
         }
 

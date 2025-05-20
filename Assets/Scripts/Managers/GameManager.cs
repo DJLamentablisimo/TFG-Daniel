@@ -58,77 +58,6 @@ public class GameManager : MonoBehaviour
         InstanciarElementosFisicos();
         StartCoroutine(PrecalentarTodosLosChatbots());
     }
-    /*
-        void GenerarPersonajes()
-        {
-            List<GameObject> seleccionados = new List<GameObject>();
-
-            while (seleccionados.Count < 4 && characterPrefabs.Length > 0)
-            {
-                GameObject personajePrefab = characterPrefabs[Random.Range(0, characterPrefabs.Length)];
-                if (!seleccionados.Contains(personajePrefab))
-                {
-                    // Instanciar personaje
-                    GameObject personajeInstancia = Instantiate(personajePrefab);
-                    seleccionados.Add(personajePrefab);
-                    listaPersonajes.Add(personajeInstancia.GetComponent<Character>());
-
-                    // Instanciar Canvas y Chatbot únicos
-                    GameObject canvasInstancia = Instantiate(canvasPrefab);
-                    canvasInstancia.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
-                    GameObject chatbotInstancia = Instantiate(chatbotPrefab);
-
-
-                    // Buscar el container dentro del canvas recién instanciado
-                    Transform container = canvasInstancia.transform.Find("ChatPanel");
-                    Button stopButton = canvasInstancia.transform.Find("StopButton")?.GetComponent<Button>();
-                    LLMCharacter llm = chatbotInstancia.GetComponentInChildren<LLMCharacter>();
-                    ChatBot chatBotScript = chatbotInstancia.GetComponent<ChatBot>();
-
-                    if (chatBotScript != null)
-                    {
-                        if (container != null)
-                            chatBotScript.chatContainer = container;
-                        else
-                            Debug.LogWarning("No se encontró 'ChatContainer' en el canvas duplicado.");
-
-                        if (stopButton != null)
-                            chatBotScript.stopButton = stopButton;
-                        else
-                            Debug.LogWarning("No se encontró 'StopButton' dentro del canvas duplicado.");
-
-                        if (llm != null)
-                            chatBotScript.llmCharacter = llm;
-                        else
-                            Debug.LogWarning("No se encontró LLMCharacter dentro del chatbot instanciado.");
-
-                        chatbotsInstanciados.Add(chatBotScript);
-                        chatBotScript.Inicializar();
-                    }
-                    else
-                    {
-                        Debug.LogWarning("No se encontró el script ChatBot en el chatbotInstancia.");
-                    }
-
-                    canvasInstancia.SetActive(false);
-                    chatbotInstancia.SetActive(false);
-
-                    ChatTrigger chatTrigger = personajeInstancia.GetComponentInChildren<ChatTrigger>();
-                    if (chatTrigger != null)
-                    {
-                        chatTrigger.chatCanvas = canvasInstancia;
-                        chatTrigger.chatbot = chatbotInstancia;
-
-                        Debug.Log($"Asignados canvas y chatbot a {personajeInstancia.name}");
-                    }
-                    else
-                    {
-                        Debug.LogWarning($"{personajeInstancia.name} no tiene ChatTrigger");
-                    }
-                }
-            }
-        }
-    */
     void GenerarPersonajes()
     {
         List<GameObject> seleccionados = new List<GameObject>();
@@ -162,44 +91,37 @@ public class GameManager : MonoBehaviour
 
                 // Buscar el container dentro del canvas recién instanciado
                 Transform container = canvasInstancia.transform.Find("ChatPanel");
-                if (container != null)
-                {
-                    ChatBot chatBotScript = chatbotInstancia.GetComponent<ChatBot>();
-                    if (chatBotScript != null)
-                    {
-                        chatBotScript.chatContainer = container;
-                        chatbotsInstanciados.Add(chatBotScript);
-
-                    }
-                    else
-                    {
-                        Debug.LogWarning("No se encontró ChatBot en el chatbotInstancia.");
-                    }
-
-                }
-                else
-                {
-                    Debug.LogWarning("No se encontró 'ChatContainer' en el canvas duplicado.");
-                }
-
-                // Buscar el StopButton dentro del Canvas instanciado
                 Button stopButton = canvasInstancia.transform.Find("StopButton")?.GetComponent<Button>();
 
-                if (stopButton != null)
+                ChatBot chatBotScript = chatbotInstancia.GetComponent<ChatBot>();
+                LLMCharacter llm = chatbotInstancia.GetComponentInChildren<LLMCharacter>();
+
+                if (chatBotScript != null)
                 {
-                    ChatBot chatBotScript = chatbotInstancia.GetComponent<ChatBot>();
-                    if (chatBotScript != null)
-                    {
+                    if (container != null)
+                        chatBotScript.chatContainer = container;
+                    else
+                        Debug.LogWarning("No se encontró 'ChatPanel' en el canvas duplicado.");
+
+                    if (stopButton != null)
                         chatBotScript.stopButton = stopButton;
+                    else
+                        Debug.LogWarning("No se encontró 'StopButton' en el canvas duplicado.");
+
+                    if (llm != null)
+                    {
+                        chatBotScript.llmCharacter = llm;
+                        chatbotsInstanciados.Add(chatBotScript);
+                        chatBotScript.Inicializar(); // 🔥 Importante
                     }
                     else
                     {
-                        Debug.LogWarning("No se encontró el script ChatBot en el chatbotInstancia.");
+                        Debug.LogWarning("❌ No se encontró LLMCharacter dentro del chatbot instanciado.");
                     }
                 }
                 else
                 {
-                    Debug.LogWarning("No se encontró 'StopButton' dentro del canvas duplicado.");
+                    Debug.LogWarning("❌ No se encontró el script ChatBot en el chatbotInstancia.");
                 }
 
                 canvasInstancia.SetActive(false);
