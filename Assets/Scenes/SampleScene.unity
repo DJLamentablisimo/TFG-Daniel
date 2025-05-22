@@ -4604,21 +4604,9 @@ MonoBehaviour:
   nKeep: -1
   stop: []
   stream: 1
-  playerName: user
-  AIName: assistant
-  prompt: "Eres un personaje jugable dentro de un videojuego de simulaci\xF3n de
-    cr\xEDmenes generados de forma procedural, el cual ser\xE1 interrogado por el
-    jugador, no te salgas del personaje. \n\nLos distintos personajes son\r\n los
-    siguientes: Edmund Gandia, 32 a\xF1os, Cirujano, personalidad pragm\xE1tica;
-    Clara\r\n Cebique, 24 a\xF1os, estudiante, personalidad nerviosa; Gerard Tule,
-    47 a\xF1os, abogado,\r\npersonalidad Optimista; Calvo Otelo, 36 a\xF1os, profesor,
-    personalidad desorganizada. \n\nLos datos del crimen actual son:\n- Asesino =
-    Edmund Gandia\n- V\xEDctima = Clara Cebique\n- Lugar = Salon2\n- Motivo = Robo\n-
-    Arma = Veneno\n- Pistas disponibles:\n  \u2022 Bote de veneno; sustancia t\xF3xica\n 
-    \u2022 Huellas dactilares en superficies\n  \u2022 Manchas de sangre en el lugar
-    del crimen\n  \u2022 Huella de zapatos cerca del escenario\n\nTu personaje es
-    el de Calvo TESTIGO.\nSigue el interrogatorio del jugador de la forma m\xE1s
-    natural posible, responde como si fueras ese personaje."
+  playerName: user3
+  AIName: ai3
+  prompt: 
   setNKeepToPrompt: 1
   chat: []
   grammarString: 
@@ -6538,7 +6526,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &632586152
 Transform:
   m_ObjectHideFlags: 0
@@ -7584,8 +7572,8 @@ MonoBehaviour:
   nKeep: -1
   stop: []
   stream: 1
-  playerName: user
-  AIName: assistant
+  playerName: user1
+  AIName: ai1
   prompt: 
   setNKeepToPrompt: 1
   chat: []
@@ -11101,6 +11089,74 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4777005230310965523}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1107757730
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1107757732}
+  - component: {fileID: 1107757731}
+  m_Layer: 0
+  m_Name: LLM3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1107757731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107757730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a50e3140c3ecaaf1c848dbf141cc2074, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  advancedOptions: 1
+  remote: 0
+  port: 13333
+  numThreads: -1
+  numGPULayers: 0
+  debug: 0
+  parallelPrompts: -1
+  dontDestroyOnLoad: 1
+  contextSize: 4000
+  batchSize: 512
+  model: Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf
+  chatTemplate: llama chat
+  lora: 
+  loraWeights: 
+  flashAttention: 0
+  APIKey: 
+  SSLCert: 
+  SSLCertPath: 
+  SSLKey: 
+  SSLKeyPath: 
+  minContextLength: 0
+  maxContextLength: 131072
+  embeddingsOnly: 0
+  embeddingLength: 4096
+--- !u!4 &1107757732
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107757730}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1108341064
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11456,6 +11512,74 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1110339063}
   m_Mesh: {fileID: -7192763454076714539, guid: e79d963bf7e92f246a76f4b5ab84ba7d, type: 3}
+--- !u!1 &1115000589
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1115000591}
+  - component: {fileID: 1115000590}
+  m_Layer: 0
+  m_Name: LLM4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1115000590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115000589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a50e3140c3ecaaf1c848dbf141cc2074, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  advancedOptions: 1
+  remote: 0
+  port: 13333
+  numThreads: -1
+  numGPULayers: 0
+  debug: 0
+  parallelPrompts: -1
+  dontDestroyOnLoad: 1
+  contextSize: 4000
+  batchSize: 512
+  model: Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf
+  chatTemplate: llama chat
+  lora: 
+  loraWeights: 
+  flashAttention: 0
+  APIKey: 
+  SSLCert: 
+  SSLCertPath: 
+  SSLKey: 
+  SSLKeyPath: 
+  minContextLength: 0
+  maxContextLength: 131072
+  embeddingsOnly: 0
+  embeddingLength: 4096
+--- !u!4 &1115000591
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115000589}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1115893029
 GameObject:
   m_ObjectHideFlags: 0
@@ -12939,6 +13063,74 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1305442697
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1305442699}
+  - component: {fileID: 1305442698}
+  m_Layer: 0
+  m_Name: LLM2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1305442698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305442697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a50e3140c3ecaaf1c848dbf141cc2074, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  advancedOptions: 1
+  remote: 0
+  port: 13333
+  numThreads: -1
+  numGPULayers: 0
+  debug: 0
+  parallelPrompts: -1
+  dontDestroyOnLoad: 1
+  contextSize: 4000
+  batchSize: 512
+  model: Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf
+  chatTemplate: llama chat
+  lora: 
+  loraWeights: 
+  flashAttention: 0
+  APIKey: 
+  SSLCert: 
+  SSLCertPath: 
+  SSLKey: 
+  SSLKeyPath: 
+  minContextLength: 0
+  maxContextLength: 131072
+  embeddingsOnly: 0
+  embeddingLength: 4096
+--- !u!4 &1305442699
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305442697}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1323902883
 GameObject:
   m_ObjectHideFlags: 0
@@ -13064,7 +13256,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1329309235
 Transform:
   m_ObjectHideFlags: 0
@@ -13667,21 +13859,9 @@ MonoBehaviour:
   nKeep: -1
   stop: []
   stream: 1
-  playerName: user
-  AIName: assistant
-  prompt: "Eres un personaje jugable dentro de un videojuego de simulaci\xF3n de
-    cr\xEDmenes generados de forma procedural, el cual ser\xE1 interrogado por el
-    jugador, no te salgas del personaje. \n\nLos distintos personajes son\r\n los
-    siguientes: Edmund Gandia, 32 a\xF1os, Cirujano, personalidad pragm\xE1tica;
-    Clara\r\n Cebique, 24 a\xF1os, estudiante, personalidad nerviosa; Gerard Tule,
-    47 a\xF1os, abogado,\r\npersonalidad Optimista; Calvo Otelo, 36 a\xF1os, profesor,
-    personalidad desorganizada. \n\nLos datos del crimen actual son:\n- Asesino =
-    Edmund Gandia\n- V\xEDctima = Clara Cebique\n- Lugar = Salon2\n- Motivo = Robo\n-
-    Arma = Veneno\n- Pistas disponibles:\n  \u2022 Bote de veneno; sustancia t\xF3xica\n 
-    \u2022 Huellas dactilares en superficies\n  \u2022 Manchas de sangre en el lugar
-    del crimen\n  \u2022 Huella de zapatos cerca del escenario\n\nTu personaje es
-    el de Clara TESTIGO.\nSigue el interrogatorio del jugador de la forma m\xE1s
-    natural posible, responde como si fueras ese personaje."
+  playerName: user4
+  AIName: ai4
+  prompt: 
   setNKeepToPrompt: 1
   chat: []
   grammarString: 
@@ -14157,8 +14337,8 @@ MonoBehaviour:
   nKeep: -1
   stop: []
   stream: 1
-  playerName: user
-  AIName: assistant
+  playerName: user2
+  AIName: ai2
   prompt: 
   setNKeepToPrompt: 1
   chat: []
@@ -14433,6 +14613,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0820587c64d6ab740ac3608b44b54d17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  modelosLLM:
+  - {fileID: 2039823456}
+  - {fileID: 1305442698}
+  - {fileID: 1107757731}
+  - {fileID: 1115000590}
   characterPrefabs:
   - {fileID: 1376271497513831856, guid: f30e5877256f34946b6f6042a0bed82c, type: 3}
   - {fileID: 1376271497513831856, guid: aefa421f7e0f1af409d1921438e490a0, type: 3}
@@ -14441,6 +14626,16 @@ MonoBehaviour:
   listaPersonajes: []
   canvasPrefab: {fileID: 1642431067}
   chatbotPrefab: {fileID: 729539055}
+  canvasExistentes:
+  - {fileID: 1642431067}
+  - {fileID: 488673704}
+  - {fileID: 887104623}
+  - {fileID: 736347352}
+  chatbotsExistentes:
+  - {fileID: 729539055}
+  - {fileID: 977035533}
+  - {fileID: 6533205}
+  - {fileID: 2050009629}
   crimenActual: {fileID: 0}
   crimenSolver: {fileID: 1941509352}
   spawnAreasPersonajes:
@@ -20253,7 +20448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a50e3140c3ecaaf1c848dbf141cc2074, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  advancedOptions: 0
+  advancedOptions: 1
   remote: 0
   port: 13333
   numThreads: -1
@@ -20261,7 +20456,7 @@ MonoBehaviour:
   debug: 0
   parallelPrompts: -1
   dontDestroyOnLoad: 1
-  contextSize: 50958
+  contextSize: 4000
   batchSize: 512
   model: Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf
   chatTemplate: llama chat
@@ -22910,6 +23105,9 @@ SceneRoots:
   - {fileID: 198549290}
   - {fileID: 1137536044}
   - {fileID: 2039823457}
+  - {fileID: 1305442699}
+  - {fileID: 1107757732}
+  - {fileID: 1115000591}
   - {fileID: 667316073}
   - {fileID: 503103404}
   - {fileID: 1941509349}

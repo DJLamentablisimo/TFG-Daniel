@@ -34,7 +34,8 @@ namespace LLMUnity
         /// <summary> number of prompts that can happen in parallel (-1 = number of LLMCaller objects) </summary>
         [LLMAdvanced] public int parallelPrompts = -1;
         /// <summary> select to not destroy the LLM GameObject when loading a new Scene. </summary>
-        [LLMAdvanced] public bool dontDestroyOnLoad = true;
+        //[LLMAdvanced] public bool dontDestroyOnLoad = true;
+        [LLMAdvanced] public bool dontDestroyOnLoad = false;
         /// <summary> Size of the prompt context (0 = context size of the model).
         /// This is the number of tokens the model can take as input when generating responses. </summary>
         [DynamicRange("minContextLength", "maxContextLength", false), Model] public int contextSize = 8192;
@@ -96,7 +97,7 @@ namespace LLMUnity
 
         public LLM()
         {
-            LLMManager.Register(this);
+            //LLMManager.Register(this);
         }
 
         void OnValidate()

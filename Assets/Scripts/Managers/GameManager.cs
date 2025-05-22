@@ -9,10 +9,14 @@ using static Enums;
 
 public class GameManager : MonoBehaviour
 {
+    public List<LLM> modelosLLM;
+
     public GameObject[] characterPrefabs;
     public List<Character> listaPersonajes = new List<Character>();
     public GameObject canvasPrefab;
     public GameObject chatbotPrefab;
+    public List<GameObject> canvasExistentes; // Canvases ya presentes en la escena
+    public List<GameObject> chatbotsExistentes; // Chatbots ya presentes en la escena
 
     public Crime crimenActual;
 
@@ -61,6 +65,7 @@ public class GameManager : MonoBehaviour
     void GenerarPersonajes()
     {
         List<GameObject> seleccionados = new List<GameObject>();
+        int i = 0;
 
         while (seleccionados.Count < 4 && characterPrefabs.Length > 0)
         {
@@ -83,10 +88,22 @@ public class GameManager : MonoBehaviour
                     character.rasgoExtra = (RasgoExtra)Random.Range(0, System.Enum.GetValues(typeof(RasgoExtra)).Length);
                 }
 
-                // Instanciar Canvas y Chatbot únicos
+                // Usar Canvas y Chatbot existentes en la escena
+                if (i >= canvasExistentes.Count || i >= chatbotsExistentes.Count)
+                {
+                    Debug.LogError("No hay suficientes Canvas o Chatbots existentes en la escena para todos los personajes.");
+                    continue;
+                }
+
+                GameObject canvasInstancia = canvasExistentes[i];
+                GameObject chatbotInstancia = chatbotsExistentes[i];
+                i++;
+                canvasInstancia.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+
+                /*// Instanciar Canvas y Chatbot únicos
                 GameObject canvasInstancia = Instantiate(canvasPrefab);
                 canvasInstancia.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
-                GameObject chatbotInstancia = Instantiate(chatbotPrefab);
+                GameObject chatbotInstancia = Instantiate(chatbotPrefab);*/
 
 
                 // Buscar el container dentro del canvas recién instanciado
@@ -96,9 +113,9 @@ public class GameManager : MonoBehaviour
                 ChatBot chatBotScript = chatbotInstancia.GetComponent<ChatBot>();
                 LLMCharacter llm = chatbotInstancia.GetComponentInChildren<LLMCharacter>();
 
-                if (chatBotScript != null)
+                if (container != null)
                 {
-                    if (container != null)
+                    if (chatBotScript != null)
                         chatBotScript.chatContainer = container;
                     else
                         Debug.LogWarning("No se encontró 'ChatPanel' en el canvas duplicado.");
@@ -111,6 +128,7 @@ public class GameManager : MonoBehaviour
                     if (llm != null)
                     {
                         chatBotScript.llmCharacter = llm;
+                        //chatBotScript.llmCharacter.llm = modelosLLM[i];
                         chatbotsInstanciados.Add(chatBotScript);
                         chatBotScript.Inicializar(); // 🔥 Importante
                     }

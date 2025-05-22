@@ -54,6 +54,8 @@ namespace LLMUnitySamples
             inputBubble.AddSubmitListener(onInputFieldSubmit);
             inputBubble.AddValueChangedListener(onValueChanged);
             inputBubble.setInteractable(false);
+
+            //WarmUpCallback();
             // Llamar a FixCaretSorting un frame más tarde desde fuera
             StartCoroutine(DelayedCaretFix());
 
