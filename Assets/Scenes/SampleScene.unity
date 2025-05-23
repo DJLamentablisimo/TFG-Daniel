@@ -7619,7 +7619,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 736347352}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
@@ -7631,7 +7631,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 17.96, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -579.00073, y: -323.2481}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &736347354
@@ -13861,7 +13861,19 @@ MonoBehaviour:
   stream: 1
   playerName: user4
   AIName: ai4
-  prompt: 
+  prompt: "Eres un personaje jugable dentro de un videojuego de simulaci\xF3n de
+    cr\xEDmenes generados\r\nde forma procedural, el cual ser\xE1 interrogado por
+    el jugador. Los distintos personajes son\r\nlos siguientes: Edmund Gandia, 32
+    a\xF1os, Cirujano, personalidad pragm\xE1tica; Clara\r\nCebique, 24 a\xF1os,
+    estudiante, personalidad nerviosa; Gerard Tule, 47 a\xF1os, abogado,\r\npersonalidad
+    Optimista; Calvo Otelo, 36 a\xF1os, profesor, personalidad desorganizada. Tu\r\npersonaje
+    es el de Clara. T\xFA no eres el culpable. La v\xEDctima se trata de Calvo Otelo.
+    El\r\ncrimen ha tenido lugar en la cocina, el culpable ha sido Gerard y el arma
+    ha sido un bote\r\nde veneno. Las pistas que hay por el entorno son el bote de
+    medicamentos (el arma), una\r\nserie de huellas dactilares y una nota que la
+    v\xEDctima ten\xEDa del asesino. Estos datos los\r\ntienes solo por contexto,
+    no los des directamente, sigue el interrogatorio de la forma m\xE1s\r\nnatural
+    posible."
   setNKeepToPrompt: 1
   chat: []
   grammarString: 
@@ -20508,7 +20520,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2050009630
 RectTransform:
   m_ObjectHideFlags: 0

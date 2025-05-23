@@ -504,7 +504,8 @@ public class GameManager : MonoBehaviour
     {
         string intro = "Eres un personaje jugable dentro de un videojuego de simulación de crímenes generados de forma procedural, el cual será interrogado por el jugador, no te salgas del personaje. \n\n";
 
-        string personajes = "Los distintos personajes son\r\n los siguientes: Edmund Gandia, 32 años, Cirujano, personalidad pragmática; Clara\r\n Cebique, 24 años, estudiante, personalidad nerviosa; Gerard Tule, 47 años, abogado,\r\npersonalidad Optimista; Calvo Otelo, 36 años, profesor, personalidad desorganizada. \n\n";
+        string personajes = "Los distintos personajes son\r\n los siguientes: Edmund Gandia, 32 años, Cirujano, personalidad pragmática; Clara\r\n Cebique, 24 años, estudiante, personalidad nerviosa; Gerard Tule, 47 años, abogado," +
+                            "\r\npersonalidad Optimista; Calvo Otelo, 36 años, profesor, personalidad desorganizada. \n\n";
 
         string datosCrimen = $"Los datos del crimen actual son:\n" +
                              $"- Asesino = {crimenActual.culprit.nombre}\n" +

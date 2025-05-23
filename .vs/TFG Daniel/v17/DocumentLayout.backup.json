@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "D:\\Proyectos\\TFG Daniel\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{88277FD2-C03B-1DC5-781E-9F232030A30E}|undream.llmunity.Runtime.csproj|D:\\Proyectos\\TFG Daniel\\assets\\llmunity\\runtime\\llm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|D:\\Proyectos\\TFG Daniel\\assets\\scripts\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88277FD2-C03B-1DC5-781E-9F232030A30E}|undream.llmunity.Runtime.csproj|D:\\Proyectos\\TFG Daniel\\assets\\llmunity\\runtime\\llmcharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88277FD2-C03B-1DC5-781E-9F232030A30E}|undream.llmunity.Runtime.csproj|solutionrelative:assets\\llmunity\\runtime\\llmcharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88277FD2-C03B-1DC5-781E-9F232030A30E}|undream.llmunity.Runtime.csproj|d:\\proyectos\\tfg daniel\\assets\\llmunity\\runtime\\llm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{88277FD2-C03B-1DC5-781E-9F232030A30E}|undream.llmunity.Runtime.csproj|solutionrelative:assets\\llmunity\\runtime\\llm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|D:\\Proyectos\\TFG Daniel\\assets\\scripts\\chatbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\chatbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|d:\\proyectos\\tfg daniel\\assets\\scripts\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|D:\\Proyectos\\TFG Daniel\\assets\\scripts\\bubble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -61,10 +65,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|D:\\Proyectos\\TFG Daniel\\assets\\scripts\\firstpersoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\firstpersoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88277FD2-C03B-1DC5-781E-9F232030A30E}|undream.llmunity.Runtime.csproj|D:\\Proyectos\\TFG Daniel\\assets\\llmunity\\runtime\\llmcharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88277FD2-C03B-1DC5-781E-9F232030A30E}|undream.llmunity.Runtime.csproj|solutionrelative:assets\\llmunity\\runtime\\llmcharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,11 +74,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "ScanableObject.cs",
               "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\Scanning\\ScanableObject.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Scanning\\ScanableObject.cs",
@@ -90,7 +90,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "DialogueManager.cs",
               "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\Managers\\DialogueManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\DialogueManager.cs",
@@ -102,45 +102,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "GameManager.cs",
               "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\Managers\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\GameManager.cs",
               "ToolTip": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\Managers\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Managers\\GameManager.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAgwGMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAowIIAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-07T11:35:24.236Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "LLM.cs",
               "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\LLMUnity\\Runtime\\LLM.cs",
               "RelativeDocumentMoniker": "Assets\\LLMUnity\\Runtime\\LLM.cs",
               "ToolTip": "D:\\Proyectos\\TFG Daniel\\Assets\\LLMUnity\\Runtime\\LLM.cs",
               "RelativeToolTip": "Assets\\LLMUnity\\Runtime\\LLM.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAGMAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-20T11:35:30.017Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 1,
               "Title": "LLMCharacter.cs",
               "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\LLMUnity\\Runtime\\LLMCharacter.cs",
               "RelativeDocumentMoniker": "Assets\\LLMUnity\\Runtime\\LLMCharacter.cs",
               "ToolTip": "D:\\Proyectos\\TFG Daniel\\Assets\\LLMUnity\\Runtime\\LLMCharacter.cs",
               "RelativeToolTip": "Assets\\LLMUnity\\Runtime\\LLMCharacter.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T11:35:17.526Z"
+              "WhenOpened": "2025-03-20T11:35:17.526Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ChatTrigger.cs",
               "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\ChatTrigger.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ChatTrigger.cs",
@@ -152,7 +153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Scanner.cs",
               "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\Scanning\\Scanner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Scanning\\Scanner.cs",
@@ -164,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "FirstPersonController.cs",
               "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\FirstPersonController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\FirstPersonController.cs",
@@ -176,7 +177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "PressKeyOpenDoor.cs",
               "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\PressKeyOpenDoor.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PressKeyOpenDoor.cs",
@@ -188,7 +189,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ChatBot.cs",
               "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\ChatBot.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ChatBot.cs",
@@ -196,12 +197,11 @@
               "RelativeToolTip": "Assets\\Scripts\\ChatBot.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAQwDkAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T11:56:39.714Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-16T11:56:39.714Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Bubble.cs",
               "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\Bubble.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Bubble.cs",
@@ -213,7 +213,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Crime.cs",
               "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\Models\\Crime.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Models\\Crime.cs",
@@ -225,7 +225,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Enums.cs",
               "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\Models\\Enums.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Models\\Enums.cs",
@@ -237,7 +237,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Clue.cs",
               "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\Models\\Clue.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Models\\Clue.cs",
@@ -249,7 +249,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Character.cs",
               "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\Models\\Character.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Models\\Character.cs",
@@ -261,7 +261,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "CanvasResolucionManager.cs",
               "DocumentMoniker": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\CanvasResolucionManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CanvasResolucionManager.cs",

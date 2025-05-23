@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "D:\\Proyectos\\TFG Daniel\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|D:\\Proyectos\\TFG Daniel\\assets\\scripts\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|d:\\proyectos\\tfg daniel\\assets\\scripts\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7499386-6C7D-A813-6B7E-2D4635B59BCD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,7 +11,7 @@
       "RelativeMoniker": "D:0:0:{88277FD2-C03B-1DC5-781E-9F232030A30E}|undream.llmunity.Runtime.csproj|solutionrelative:assets\\llmunity\\runtime\\llmcharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88277FD2-C03B-1DC5-781E-9F232030A30E}|undream.llmunity.Runtime.csproj|d:\\proyectos\\tfg daniel\\assets\\llmunity\\runtime\\llm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{88277FD2-C03B-1DC5-781E-9F232030A30E}|undream.llmunity.Runtime.csproj|D:\\Proyectos\\TFG Daniel\\assets\\llmunity\\runtime\\llm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{88277FD2-C03B-1DC5-781E-9F232030A30E}|undream.llmunity.Runtime.csproj|solutionrelative:assets\\llmunity\\runtime\\llm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -108,7 +108,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\GameManager.cs",
               "ToolTip": "D:\\Proyectos\\TFG Daniel\\Assets\\Scripts\\Managers\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Managers\\GameManager.cs",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAowIIAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAANsBAAAAAAAAAAAAABYCAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-07T11:35:24.236Z",
               "EditorCaption": ""
@@ -123,8 +123,7 @@
               "RelativeToolTip": "Assets\\LLMUnity\\Runtime\\LLM.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAGMAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T11:35:30.017Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T11:35:30.017Z"
             },
             {
               "$type": "Document",
@@ -136,8 +135,7 @@
               "RelativeToolTip": "Assets\\LLMUnity\\Runtime\\LLMCharacter.cs",
               "ViewState": "AgIAAFYAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T11:35:17.526Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T11:35:17.526Z"
             },
             {
               "$type": "Document",
